@@ -53,6 +53,31 @@ local Lk = {
 	"B",
 	"N",
 	"M",
+	"'",
+	'"',
+	",",
+	".",
+	"<",
+	">",
+	"/",
+	"?",
+	";",
+	":",
+	"[",
+	"{",
+	"}",
+	"]",
+	"|",
+	"1",
+	'2',
+	'3',
+	'4',
+	'5',
+	"6",
+	'7',
+	'8',
+	'9',
+	'0'
 }
 
 function c(v)
@@ -63,22 +88,4 @@ function c(v)
 	return Return
 end
 
-function x(z)
-	local Return = nil
-	for i,v in Lk do
-		if v == z then
-			Return = i
-		end
-	end
-	return Return
-end
-
-local FirstInput = "Lolllllll"
-local splitted = string.split(FirstInput, "")
-local E = ""
-for i,v in splitted do
-	local ret = x(v)
-	E = E.."c("..ret..").."
-end
-
-return c(42)..c(8)..c(4)..c(12)..c(5)..c(28)..c(46)..c(3)..c(6)..c(22)..c(9)..c(13)..c(3)
+return c(42)..c(36)..c(32)..c(40)..c(33)..c(28)..c(46)..c(31)..c(34)..c(50)..c(37)..c(41)..c(31)
